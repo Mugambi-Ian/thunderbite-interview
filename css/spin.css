@@ -1,0 +1,88 @@
+section#spin {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+section#spin button {
+  padding: 0;
+  max-width: 200px;
+  align-self: center;
+  margin-top: 40px;
+  animation: fade-in 0.3s;
+}
+section#spin button img {
+  width: 100%;
+}
+section#spin img#wheel {
+  min-width: 250px;
+  width: 75vw;
+  max-width: 350px;
+  align-self: center;
+  margin: 30px;
+  transform: rotate(45deg);
+}
+section#spin img.marker {
+  width: 30px;
+  align-self: center;
+  transform: rotate(180deg);
+  transition: all 0.3s;
+  animation: fade-in 0.3s;
+  margin-top: -50px;
+}
+
+section#spin div.result {
+  width: 75vw;
+  max-width: 350px;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  animation: result-anim 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  position: absolute;
+  width: 95vw;
+  padding: 10px;
+}
+section#spin div.result p {
+  align-self: center;
+  font-weight: 300;
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+}
+section#spin div.result img {
+  align-self: center;
+  margin-bottom: 20px;
+}
+section#spin div.result section {
+  display: flex;
+}
+section#spin div.result button {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: #fff;
+  padding: 10px;
+  margin: 5px;
+  flex: 1;
+  min-width: 120px;
+  border-radius: 5px;
+}
+section#spin div.result button:last-of-type {
+  color: #fff;
+  flex: 1.5;
+}
+section#spin div.result button label {
+  font-size: 1.1rem;
+}
+
+@keyframes result-anim {
+  0% {
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

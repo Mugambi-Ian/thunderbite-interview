@@ -1,0 +1,56 @@
+@import url("../public/fonts/fonts.css");
+main {
+  display: flex;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+label,
+img {
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  margin: 0;
+  font-family: "Futura PT", sans-serif;
+  pointer-events: none;
+}
+
+.text {
+  -webkit-touch-callout: unset;
+  -webkit-user-select: unset;
+  -khtml-user-select: unset;
+  -moz-user-select: unset;
+  -ms-user-select: unset;
+  user-select: unset;
+}
+
+button {
+  font-family: "Futura PT", sans-serif;
+  border: unset;
+  margin: 0;
+  padding: 0;
+  transition: all 0.3s;
+  background-color: unset;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+@import url("./splash.css");
+@import url("./home.css");
+@import url("./spin.css");
