@@ -12,7 +12,7 @@ export default class Home extends React.Component {
           <p>Select an option below</p>
         </header>
         <section >
-          <Link href="/upload">
+          <Link href="/showdown">
             <a
               onClick={async (e) => {
                 e.preventDefault();
@@ -25,7 +25,7 @@ export default class Home extends React.Component {
               <label>Visual Showdown</label>
             </a>
           </Link>
-          <Link href="/files">
+          <Link href="/spin">
             <a
               onClick={async (e) => {
                 e.preventDefault();
