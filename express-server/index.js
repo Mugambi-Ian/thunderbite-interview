@@ -4,6 +4,7 @@ const cors = require("cors");
 const port = 5000;
 
 app.use(cors());
+
 app.get("/runRandom", (req, res) => {
   const x = 360;
   const y = 1080;
